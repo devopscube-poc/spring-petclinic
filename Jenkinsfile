@@ -17,5 +17,11 @@ pipeline {
                   )               
             }
         }
+        stage("Testing Ansi Colour") {
+            steps {
+                sh """
+                echo "checking Ansi Colour Schemes" 
+                """
+                {
     }
 }
