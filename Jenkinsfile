@@ -4,21 +4,6 @@ pipeline {
     agent any
 
     stages {
-        stage("Authorize Pipeline") {
-            input {
-              message 'TESTING'
-              submitter 'testuser'
-              parameters {
-              text defaultValue: 'dev', description: '', name: 'ENV'
-              text defaultValue: 'dev-cluster', description: '', name: 'CLUSTER'
-              }
-            } 
-            steps {
-                sh """
-                echo "Setting INPUT parameters"
-                """
-            }
-        }
         stage('Git Checkout') {
             steps {             
                 gitCheckout(
