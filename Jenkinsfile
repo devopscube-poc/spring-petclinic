@@ -1,3 +1,4 @@
+@Library('dcube-library') _
 
 pipeline {
     agent any
