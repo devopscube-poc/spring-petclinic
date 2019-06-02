@@ -22,6 +22,7 @@ pipeline {
                 sh """
                 echo "checking Ansi Colour Schemes" 
                 """
-                {
+            }
+        }
     }
 }
